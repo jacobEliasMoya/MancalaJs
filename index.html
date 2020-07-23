@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MancalaJS</title>
+</head>
+<body>
+
+    <!-- <div class="rulesPopUp"> -->
+    <div class="theRules">
+        <p>        
+            <span class="mainPoint">For 2 players – Ages 7 to Adult</span> <br>
+            Mancala is an ancient family of board games, and there are numerous variants. This is a version of the basic game, known as two-rank
+            Mancala and also known as Kalah <br><br>
+            <span class="mainPoint">Contents:</span> <br>
+            1 Mancala board
+            48 colored plastic pieces (also called “stones”) <br><br>
+            <span class="mainPoint">Set Up:</span> <br>
+            The Mancala board is made up of two rows of six pockets (also called “holes,” or “pits”) each.
+            Four pieces are placed in each of the 12 pockets. The color of the pieces is irrelevant.
+            Each player has a “store” (also called a “Mancala”) to his/her right side of the Mancala board. <br>
+            Object:
+            The object of the game is to collect the most pieces by the end of the game. <br><br>
+            <span class="mainPoint">Game-Play:</span> <br>
+    
+            1. The game begins with one player picking up all of the pieces in any one of the pockets on his/her side <br>            
+            2. Moving clockwise, the player deposits one of the stones in each pocket until the stones run out. <br>
+            3. If you run into your own Mancala (store), deposit one piece in it. If you run into your opponent's Mancala, skip it and
+            continue moving to the next pocket. <br>
+            4. If the last piece you drop is in your own Mancala, you take another turn. <br>
+            5. If the last piece you drop is in an empty pocket on your side, you capture that piece and any pieces in the pocket directly
+            opposite. <br>
+            6. Always place all captured pieces in your Mancala (store). <br>
+            7. The game ends when all six pockets on one side of the Mancala board are empty. <br>
+            8. The player who still has pieces on his/her side of the board when the game ends captures all of those pieces. <br>
+            9. Count all the pieces in each Mancala. The winner is the player with the most pieces. <br>
+    </p>
+    <button class='closeButton'>X</button>
+    </div>
+
+    <nav>
+        <h1>MancalaJS</h1>
+        <p>a project by <a href="http://jacobmoya.com/">Jacob Moya</a></p>
+    </nav>
+
+    <main class="gameBoard-container">
+
+        <h1>Mancala</h1>
+        <div class="turn-indicator">
+            <h1 class="p1">P1</h1> <h1 class="p2">P2</h1>
+        </div>
+        TO RIGHT
+        <div class="gameBoard">
+
+            <div class="p1Goal"></div>
+
+            <div class="playArea">
+                <div class="p2Side">
+                    <div class="p2Slot one piece" ></div>
+                    <div class="p2Slot two piece"></div>
+                    <div class="p2Slot three piece"></div>
+                    <div class="p2Slot four piece"></div>
+                    <div class="p2Slot five piece"></div>
+                    <div class="p2Slot six piece"></div>
+
+                </div>
+                <div class="p1Side">
+                    <div class="p1Slot six piece"></div>
+                    <div class="p1Slot five piece"></div>
+                    <div class="p1Slot four piece"></div>
+                    <div class="p1Slot three piece"></div>
+                    <div class="p1Slot two piece"></div>
+                    <div class="p1Slot one piece"></div>
+                </div>
+    
+            </div>
+
+            <div class="p2Goal"></div>
+        </div>
+        <BR>
+        TO LEFT
+    </main>
+
+    <footer>
+        <h1>Single-Player / Multi-Player:</h1>
+        <select name="playerSelect" class="playerSelect">
+            <option value="1player">1 Player</option>
+            <option value="2player">2 Player</option>
+        </select>
+        <div class="divider"></div>
+        <button class="beginButton">Begin</button>
+        <button class="ruleButton">Rules</button>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

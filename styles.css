@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.theRules {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 0%;
+  width: auto;
+  max-width: 90%;
+  background: tan;
+  position: absolute;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 0.5rem solid #a86d1f;
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+}
+
+.theRules .mainPoint {
+  color: white;
+}
+
+.theRules .closeButton {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background: #a86d1f;
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+}
+
+.theRules .closeButton:hover {
+  -webkit-box-shadow: 0 0 1rem white;
+          box-shadow: 0 0 1rem white;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+nav, footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 10vh;
+  width: 100%;
+  background: black;
+  color: white;
+}
+
+footer {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer button, footer select {
+  font-size: 1rem;
+  height: 50%;
+  width: 10%;
+  cursor: pointer;
+}
+
+footer button:hover, footer select:hover {
+  -webkit-box-shadow: 0 0 1rem white;
+          box-shadow: 0 0 1rem white;
+}
+
+footer h1 {
+  margin-right: 5rem;
+  font-size: 1.5rem;
+}
+
+footer .divider {
+  height: 90%;
+  width: 2.5px;
+  background: white;
+}
+
+.gameBoard-container {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+  width: 100%;
+  background: linear-gradient(45deg, tan, #a86d1f);
+  border-bottom: .5rem solid #9b5800;
+  border-top: .5rem solid #9b5800;
+}
+
+.gameBoard-container h1 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 5rem;
+  margin-bottom: 5rem;
+  margin-top: -5rem;
+  letter-spacing: .5rem;
+  color: #9b5800;
+}
+
+.gameBoard-container .turn-indicator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0rem 2.5rem;
+  width: 55rem;
+  margin-bottom: -5rem;
+}
+
+.gameBoard-container .turn-indicator .p1 {
+  color: tan;
+}
+
+.gameBoard-container .turn-indicator .p2 {
+  color: tan;
+}
+
+.gameBoard-container .gameBoard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 20rem;
+  width: 55rem;
+  background: url("./images/woodgrainBackground.jpg");
+  border-radius: 1rem;
+  -webkit-box-shadow: 0rem 1rem 1rem black;
+          box-shadow: 0rem 1rem 1rem black;
+  border-bottom: .75rem solid #331600;
+}
+
+.gameBoard-container .gameBoard .p1Goal, .gameBoard-container .gameBoard .p2Goal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90%;
+  width: 15%;
+  border-radius: 3rem;
+  background: url("./images/woodgrainBackground.jpg");
+  -webkit-box-shadow: inset 0 1rem 1rem 1rem black;
+          box-shadow: inset 0 1rem 1rem 1rem black;
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gameBoard-container .gameBoard .playArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gameBoard-container .gameBoard .playArea .p1Side, .gameBoard-container .gameBoard .playArea .p2Side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.gameBoard-container .gameBoard .playArea .p1Side .piece, .gameBoard-container .gameBoard .playArea .p2Side .piece {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  background: url("./images/woodgrainBackground.jpg");
+  -webkit-box-shadow: inset 0 1rem 1rem;
+          box-shadow: inset 0 1rem 1rem;
+  margin: 2rem .25rem;
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  cursor: pointer;
+}
+
+.gameBoard-container .gameBoard .playArea .p1Side .piece:hover, .gameBoard-container .gameBoard .playArea .p2Side .piece:hover {
+  -webkit-box-shadow: inset 0 0 1rem white;
+          box-shadow: inset 0 0 1rem white;
+  padding-bottom: 1rem;
+}
+
+.gamePiece {
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+}
+/*# sourceMappingURL=styles.css.map */
